@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE7A072415F8F297004E95B8 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7A072315F8F297004E95B8 /* LocationManager.m */; };
+		EE7A072C15F8F413004E95B8 /* Updater.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7A072B15F8F413004E95B8 /* Updater.m */; };
+		EE96ACA715F7D10A000A2E8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE96ACA615F7D10A000A2E8E /* UIKit.framework */; };
+		EE96ACA915F7D10A000A2E8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE96ACA815F7D10A000A2E8E /* Foundation.framework */; };
+		EE96ACAB15F7D10A000A2E8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE96ACAA15F7D10A000A2E8E /* CoreGraphics.framework */; };
+		EE96ACB115F7D10A000A2E8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE96ACAF15F7D10A000A2E8E /* InfoPlist.strings */; };
+		EE96ACB315F7D10A000A2E8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE96ACB215F7D10A000A2E8E /* main.m */; };
+		EE96ACB715F7D10A000A2E8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE96ACB615F7D10A000A2E8E /* AppDelegate.m */; };
+		EE96ACBA15F7D10A000A2E8E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE96ACB815F7D10A000A2E8E /* MainStoryboard.storyboard */; };
+		EE96ACBD15F7D10A000A2E8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE96ACBC15F7D10A000A2E8E /* ViewController.m */; };
+		EE96ACC715F7D2D3000A2E8E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE96ACC315F7D2C6000A2E8E /* CoreLocation.framework */; };
+		EE96ACC815F7D2D5000A2E8E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE96ACC415F7D2C6000A2E8E /* MapKit.framework */; };
+		EE96ACCB15F7D7DD000A2E8E /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = EE96ACCA15F7D7DD000A2E8E /* MapPoint.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE7A072215F8F297004E95B8 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		EE7A072315F8F297004E95B8 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		EE7A072A15F8F413004E95B8 /* Updater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Updater.h; sourceTree = "<group>"; };
+		EE7A072B15F8F413004E95B8 /* Updater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Updater.m; sourceTree = "<group>"; };
+		EE96ACA215F7D10A000A2E8E /* Traveller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traveller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE96ACA615F7D10A000A2E8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EE96ACA815F7D10A000A2E8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE96ACAA15F7D10A000A2E8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EE96ACAE15F7D10A000A2E8E /* Traveller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Traveller-Info.plist"; sourceTree = "<group>"; };
+		EE96ACB015F7D10A000A2E8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE96ACB215F7D10A000A2E8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE96ACB415F7D10A000A2E8E /* Traveller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Traveller-Prefix.pch"; sourceTree = "<group>"; };
+		EE96ACB515F7D10A000A2E8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE96ACB615F7D10A000A2E8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE96ACB915F7D10A000A2E8E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EE96ACBB15F7D10A000A2E8E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EE96ACBC15F7D10A000A2E8E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EE96ACC315F7D2C6000A2E8E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EE96ACC415F7D2C6000A2E8E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EE96ACC915F7D7DD000A2E8E /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
+		EE96ACCA15F7D7DD000A2E8E /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE96AC9F15F7D10A000A2E8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE96ACC715F7D2D3000A2E8E /* CoreLocation.framework in Frameworks */,
+				EE96ACA715F7D10A000A2E8E /* UIKit.framework in Frameworks */,
+				EE96ACC815F7D2D5000A2E8E /* MapKit.framework in Frameworks */,
+				EE96ACA915F7D10A000A2E8E /* Foundation.framework in Frameworks */,
+				EE96ACAB15F7D10A000A2E8E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE96AC9715F7D10A000A2E8E = {
+			isa = PBXGroup;
+			children = (
+				EE96ACAC15F7D10A000A2E8E /* Traveller */,
+				EE96ACA515F7D10A000A2E8E /* Frameworks */,
+				EE96ACA315F7D10A000A2E8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE96ACA315F7D10A000A2E8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE96ACA215F7D10A000A2E8E /* Traveller.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE96ACA515F7D10A000A2E8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE96ACC315F7D2C6000A2E8E /* CoreLocation.framework */,
+				EE96ACC415F7D2C6000A2E8E /* MapKit.framework */,
+				EE96ACA615F7D10A000A2E8E /* UIKit.framework */,
+				EE96ACA815F7D10A000A2E8E /* Foundation.framework */,
+				EE96ACAA15F7D10A000A2E8E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE96ACAC15F7D10A000A2E8E /* Traveller */ = {
+			isa = PBXGroup;
+			children = (
+				EE96ACB515F7D10A000A2E8E /* AppDelegate.h */,
+				EE96ACB615F7D10A000A2E8E /* AppDelegate.m */,
+				EE96ACB815F7D10A000A2E8E /* MainStoryboard.storyboard */,
+				EE96ACBB15F7D10A000A2E8E /* ViewController.h */,
+				EE96ACBC15F7D10A000A2E8E /* ViewController.m */,
+				EE96ACAD15F7D10A000A2E8E /* Supporting Files */,
+				EE96ACC915F7D7DD000A2E8E /* MapPoint.h */,
+				EE96ACCA15F7D7DD000A2E8E /* MapPoint.m */,
+				EE7A072215F8F297004E95B8 /* LocationManager.h */,
+				EE7A072315F8F297004E95B8 /* LocationManager.m */,
+				EE7A072A15F8F413004E95B8 /* Updater.h */,
+				EE7A072B15F8F413004E95B8 /* Updater.m */,
+			);
+			path = Traveller;
+			sourceTree = "<group>";
+		};
+		EE96ACAD15F7D10A000A2E8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE96ACAE15F7D10A000A2E8E /* Traveller-Info.plist */,
+				EE96ACAF15F7D10A000A2E8E /* InfoPlist.strings */,
+				EE96ACB215F7D10A000A2E8E /* main.m */,
+				EE96ACB415F7D10A000A2E8E /* Traveller-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE96ACA115F7D10A000A2E8E /* Traveller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE96ACC015F7D10A000A2E8E /* Build configuration list for PBXNativeTarget "Traveller" */;
+			buildPhases = (
+				EE96AC9E15F7D10A000A2E8E /* Sources */,
+				EE96AC9F15F7D10A000A2E8E /* Frameworks */,
+				EE96ACA015F7D10A000A2E8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Traveller;
+			productName = Traveller;
+			productReference = EE96ACA215F7D10A000A2E8E /* Traveller.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE96AC9915F7D10A000A2E8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = .;
+			};
+			buildConfigurationList = EE96AC9C15F7D10A000A2E8E /* Build configuration list for PBXProject "Traveller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE96AC9715F7D10A000A2E8E;
+			productRefGroup = EE96ACA315F7D10A000A2E8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE96ACA115F7D10A000A2E8E /* Traveller */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE96ACA015F7D10A000A2E8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE96ACB115F7D10A000A2E8E /* InfoPlist.strings in Resources */,
+				EE96ACBA15F7D10A000A2E8E /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE96AC9E15F7D10A000A2E8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE96ACB315F7D10A000A2E8E /* main.m in Sources */,
+				EE96ACB715F7D10A000A2E8E /* AppDelegate.m in Sources */,
+				EE96ACBD15F7D10A000A2E8E /* ViewController.m in Sources */,
+				EE96ACCB15F7D7DD000A2E8E /* MapPoint.m in Sources */,
+				EE7A072415F8F297004E95B8 /* LocationManager.m in Sources */,
+				EE7A072C15F8F413004E95B8 /* Updater.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE96ACAF15F7D10A000A2E8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE96ACB015F7D10A000A2E8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EE96ACB815F7D10A000A2E8E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE96ACB915F7D10A000A2E8E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE96ACBE15F7D10A000A2E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE96ACBF15F7D10A000A2E8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE96ACC115F7D10A000A2E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Traveller/Traveller-Prefix.pch";
+				INFOPLIST_FILE = "Traveller/Traveller-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EE96ACC215F7D10A000A2E8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Traveller/Traveller-Prefix.pch";
+				INFOPLIST_FILE = "Traveller/Traveller-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE96AC9C15F7D10A000A2E8E /* Build configuration list for PBXProject "Traveller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE96ACBE15F7D10A000A2E8E /* Debug */,
+				EE96ACBF15F7D10A000A2E8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE96ACC015F7D10A000A2E8E /* Build configuration list for PBXNativeTarget "Traveller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE96ACC115F7D10A000A2E8E /* Debug */,
+				EE96ACC215F7D10A000A2E8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE96AC9915F7D10A000A2E8E /* Project object */;
+}
