@@ -25,6 +25,7 @@ typedef enum { ON_STATE, OFF_STATE } TravellerState;
 + (void) updateFile: (CLLocation*) location;
 + (NSString*) uploadFile;
 
++ (void) resetFile;
 + (void) setLiveUpdates: (BOOL) doLive;
 
 @end

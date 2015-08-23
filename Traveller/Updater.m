@@ -59,6 +59,12 @@ static BOOL _doLiveUpdates = TRUE;
 	[self sendRequest:url];
 }
 
++ (void) resetFile {
+
+	NSString *filepath = [DOCUMENTS_DIRECTORY stringByAppendingPathComponent:FILENAME];
+	[[NSFileManager defaultManager] createFileAtPath:filepath contents:nil attributes:nil];
+}
+
 + (void) updateFile:(CLLocation *)location {
 	
 
@@ -96,7 +102,7 @@ static BOOL _doLiveUpdates = TRUE;
 	 You might want to generate a random boundary.. this is just the same 
 	 as my output from wireshark on a valid html post
 	 */
-	NSString *boundary = [NSString stringWithString:@"--AA"];
+	NSString *boundary = @"--AA";
 	NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
 	[request addValue:contentType forHTTPHeaderField: @"Content-Type"];
 	
@@ -105,8 +111,8 @@ static BOOL _doLiveUpdates = TRUE;
 	 */
 	NSMutableData *body = [NSMutableData data];
 	[body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];	
-	[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"file\"; filename=\"filename\"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
-	[body appendData:[[NSString stringWithString:@"Content-Type: application/octet-stream\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[@"Content-Disposition: form-data; name=\"file\"; filename=\"filename\"\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+	[body appendData:[@"Content-Type: application/octet-stream\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
 	[body appendData:data];
 	[body appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
 	// setting the body of the post to the reqeust

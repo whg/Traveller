@@ -31,6 +31,7 @@
 - (IBAction)distanceThresholdChanged:(id)sender;
 - (IBAction)backupPressed:(id)sender;
 - (IBAction)backupSwitchChanged:(id)sender;
+- (IBAction)startButtonPressed:(id)sender;
 
 @end
 
@@ -140,6 +141,16 @@
 	_backupResultLabel.text = [Updater uploadFile];
 	
 }
+
+- (IBAction)startButtonPressed:(id)sender {
+	
+	[Updater resetFile];
+	
+	[_switch setOn:YES];
+	[self switchPressed:_switch]; //this kicks everything off
+	
+}
+
 
 - (IBAction)backupSwitchChanged:(id)sender {
 	
