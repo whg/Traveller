@@ -103,18 +103,11 @@
 }
 
 - (IBAction)buttonPressed:(id)sender {
-	if (_mapView.frame.size.height == 278) {
-		[UIView animateWithDuration:0.3
-										 animations:^{
-											 _mapView.frame = CGRectMake(0, 0, 320, 400);
-										 }];
-	}
-	else {
-		[UIView animateWithDuration:0.3 
-										 animations:^{
-											 _mapView.frame = CGRectMake(0, 0, 320, 278);
-										 }];
-	}
+
+//		[UIView animateWithDuration:0.3
+//										 animations:^{
+//											 _mapView.frame = CGRectMake(0, 0, 320, 400);
+//										 }];
 
 }
 

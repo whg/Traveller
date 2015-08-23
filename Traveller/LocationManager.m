@@ -51,7 +51,10 @@
 		self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 		self.locationManager.delegate = self;
 
+        [self.locationManager requestAlwaysAuthorization];
 		
+        self.restInterval = 5;
+        self.locationAccuracy = 1000;
 	}
 	return self;
 }
@@ -64,6 +67,8 @@
 	if (_doneUpdate) {
 		return;
 	}
+    
+    NSLog(@"accuracy = %f", newLocation.horizontalAccuracy);
 	
 	if (newLocation.horizontalAccuracy <= self.locationAccuracy) {
 		
@@ -99,13 +104,13 @@
 		self.viewController.countdownButton.titleLabel.text = @"";
 		self.viewController.lastUpdateLabel.text = @"looking";
 		_counter = 0;
-//		NSLog(@"started looking");
+		NSLog(@"started looking");
 		_doneUpdate = NO;
 		
 	}
 	
 	self.viewController.countdownButton.titleLabel.text = [@"" stringByAppendingFormat:@"%i", self.restInterval - _counter];
-//	NSLog(@"waiting: %i", self.restInterval - _counter);
+	NSLog(@"waiting: %i", self.restInterval - _counter);
 	
 	_counter++;
 }
