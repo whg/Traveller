@@ -70,9 +70,9 @@
 		return;
 	}
     
-    NSLog(@"accuracy = %f", newLocation.horizontalAccuracy);
+    double accuracy = MIN(newLocation.horizontalAccuracy, newLocation.verticalAccuracy);
 	
-	if (newLocation.horizontalAccuracy <= self.locationAccuracy) {
+	if (accuracy <= self.locationAccuracy) {
 		
 		[Updater updateLocation:newLocation];
 		[Updater updateFile:newLocation];
@@ -129,7 +129,7 @@
                                        selector:@selector(mainUpdate) userInfo:nil repeats:YES];
 		
 		[[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
-	}
+	}	
 }
 
 - (void) dealloc {

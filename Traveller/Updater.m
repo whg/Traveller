@@ -10,7 +10,7 @@
 
 static BOOL _doLiveUpdates = TRUE;
 
-static const NSString *UPDATE_BASE_URL = @"http://fezz.in/whg/wigc/update.php?";
+static const NSString *UPDATE_BASE_URL = @"http://where.are.maia.and.willgallia.com/update.php?";
 
 @implementation Updater
 
@@ -90,7 +90,7 @@ static const NSString *UPDATE_BASE_URL = @"http://fezz.in/whg/wigc/update.php?";
 	
 	//taken from: http://zcentric.com/2008/08/29/post-a-uiimage-to-the-web/
 	
-	NSURL *url = [NSURL URLWithString:@"http://where.is.wgallia.com/upload.php"];
+	NSURL *url = [NSURL URLWithString:@"http://where.are.maia.and.willgallia.com/upload.php"];
 	NSString *filepath = [DOCUMENTS_DIRECTORY stringByAppendingPathComponent:FILENAME];
 	NSFileHandle *file = [NSFileHandle fileHandleForReadingAtPath:filepath];
 	NSData *data = [file readDataToEndOfFile];
