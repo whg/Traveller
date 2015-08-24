@@ -54,6 +54,8 @@
 				[application endBackgroundTask: background_task]; //Tell the system that we are done with the tasks
 				background_task = UIBackgroundTaskInvalid; //Set the task to be invalid
 				
+                NSLog(@"background task has ended");
+                
 				//System will be shutting down the app at any point in time now
 			}];
 			
@@ -64,7 +66,7 @@
 				
 				NSLog(@"\n\nRunning in the background!\n\n");
 				
-				[[LocationManager manager] update:YES];
+				[[LocationManager manager] startUpdating:YES];
 				
 //				[application endBackgroundTask: background_task]; //End the task so the system knows that you are done with what you need to perform
 //				background_task = UIBackgroundTaskInvalid; //Invalidate the background_task
@@ -78,7 +80,7 @@
 	// Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 	NSLog(@"%@", NSStringFromSelector(_cmd));
 	
-	[[LocationManager manager] update:NO];
+//	[[LocationManager manager] startUpdating:NO];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

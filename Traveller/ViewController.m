@@ -33,12 +33,13 @@
 - (IBAction)backupSwitchChanged:(id)sender;
 - (IBAction)startButtonPressed:(id)sender;
 
+
 @end
 
 @implementation ViewController
 
 @synthesize lastUpdateLabel = _lastUpdateLabel;
-@synthesize countdownButton = _countdownButton;
+@synthesize countdownLabel = _countdownLabel;
 
 
 - (void)viewDidLoad {
@@ -48,13 +49,20 @@
 	//	[self.locationManager startUpdatingLocation];
 	
 	_locationManager = [LocationManager manager];
+    
+    _distanceThresholdLabel.text = [@"" stringByAppendingFormat:@"%.1fm", _locationManager.locationAccuracy];
+    _restTimeLabel.text = [@"" stringByAppendingFormat:@"%is", _locationManager.restInterval];
+    
+    
+
+    
 	
 	CLLocationCoordinate2D loc = CLLocationCoordinate2DMake(0, 0);
 	_mapPoint = [[MapPoint alloc] initWithCoordinate:loc];
 	[_mapView addAnnotation:_mapPoint];
 	
 	if (_switch.isOn) {
-		[_locationManager update:YES];
+		[_locationManager startUpdating:YES];
 	}
 	
 }
@@ -83,7 +91,7 @@
 	[_mapPoint setCoordinate:location.coordinate];
 	
 	MKCoordinateRegion region = MKCoordinateRegionMake(location.coordinate, 
-																										 MKCoordinateSpanMake(0.1, 0.1));
+                                                       MKCoordinateSpanMake(0.1, 0.1));
 	
 	_mapView.region = region;
 }
@@ -98,7 +106,7 @@
 
 - (IBAction)switchPressed:(id)sender {
 
-	[[LocationManager manager] update:[sender isOn]];
+	[[LocationManager manager] startUpdating:[sender isOn]];
 //	NSLog(@"started %i", [sender isOn]);
 }
 

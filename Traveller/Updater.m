@@ -10,6 +10,8 @@
 
 static BOOL _doLiveUpdates = TRUE;
 
+static const NSString *UPDATE_BASE_URL = @"http://fezz.in/whg/wigc/update.php?";
+
 @implementation Updater
 
 + (void) setLiveUpdates:(BOOL)doLive {
@@ -19,20 +21,25 @@ static BOOL _doLiveUpdates = TRUE;
 + (NSURL*) urlWithLocation: (CLLocation*) location {
 
 	CLLocationCoordinate2D coord = [location coordinate];
-	NSString *params = [@"" stringByAppendingFormat:@"long=%f&latt=%f&timestamp=%f", 
+	NSString *params = [@"" stringByAppendingFormat:@"lon=%f&lat=%f&time=%f&hacc=%f&vacc=%f",
 											coord.longitude, coord.latitude,
-											[location.timestamp timeIntervalSince1970]];
-	NSString *urlString = [@"http://where.is.wgallia.com/update.py?" stringByAppendingString:params];
+											[location.timestamp timeIntervalSince1970],
+                                            [location horizontalAccuracy], [location verticalAccuracy]];
+    
+	NSString *urlString = [UPDATE_BASE_URL stringByAppendingString:params];
+    NSLog(@"%@", urlString);
 	return [NSURL URLWithString:urlString];
 }
 
 + (NSURL*) urlWithState: (TravellerState) state {
-	switch (state) {
-		case ON_STATE:
-			return [NSURL URLWithString:@"http://where.is.wgallia.com/update.py?status=CYCLING"];
-		case OFF_STATE:
-			return [NSURL URLWithString:@"http://where.is.wgallia.com/update.py?status=resting"];
-	}
+//	switch (state) {
+//		case ON_STATE:
+//            url = [UPDATE_BASE_URL stringByAppendingString:@"stat
+//			return [NSURL URLWithString:@"http://where.is.wgallia.com/update.py?status=CYCLING"];
+//		case OFF_STATE:
+//			return [NSURL URLWithString:@"http://where.is.wgallia.com/update.py?status=resting"];
+//	}
+    return [[NSURL alloc] init];
 }
 
 + (void) sendRequest: (NSURL*) url {

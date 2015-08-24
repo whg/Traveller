@@ -17,9 +17,11 @@
 
 @property (nonatomic, assign) CLLocationAccuracy locationAccuracy;
 @property (nonatomic, assign) NSUInteger restInterval;
+//@property (nonatomic) BOOL isUpdating;
+
 
 + (id) manager;
 
-- (void) update: (BOOL) update;
+- (void) startUpdating: (BOOL) update;
 
 @end

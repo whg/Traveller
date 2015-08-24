@@ -13,7 +13,7 @@
 @interface ViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UILabel *lastUpdateLabel;
-@property (nonatomic, weak) IBOutlet UIButton *countdownButton;
+@property (weak, nonatomic) IBOutlet UILabel *countdownLabel;
 
 
 - (void) updateMapWithLocation: (CLLocation*) location;
